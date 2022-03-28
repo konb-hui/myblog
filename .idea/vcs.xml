@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/.deploy_git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/diaspora" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/gal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/kratos-rebirth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/memory" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/one" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/shana" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/tangyuxian" vcs="Git" />
+  </component>
+</project>
