@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% const needSplit = theme.widgets.includes('splitter') && (is_post() || is_page()); %>
 <% const showToc = page.toc && strip_html(toc(page.content)); %>
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
@@ -23,4 +24,31 @@
         }
     }) %>
     </div>
+=======
+<% const needSplit = theme.widgets.includes('splitter') && (is_post() || is_page()); %>
+<% const showToc = page.toc && strip_html(toc(page.content)); %>
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    <% if (!needSplit) { %>
+        <div class="sticky-area">
+    <% } %>
+    <% theme.widgets.forEach(function(widget){
+        switch (widget) {
+            case 'toc':
+                if (showToc) { %>
+                    <%- partial('_widget/toc') %>
+                <% }
+            break;
+            case 'splitter':
+                if (needSplit) { %>
+                    <div class="sticky-area">
+                <% }
+            break;
+            default: %>
+                <%- partial('_widget/' + widget) %>
+            <% break;
+        }
+    }) %>
+    </div>
+>>>>>>> 2143c2b87fc69e61113829da03e865f7bce4c8ff
 </section>

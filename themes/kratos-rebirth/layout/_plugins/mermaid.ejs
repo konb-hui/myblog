@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script>
     // Initialize
     const init = () => {
@@ -12,4 +13,20 @@
     }
     // Set PJAX callback function
     window.addEventListener('pjax:complete', reload);
+=======
+<script>
+    // Initialize
+    const init = () => {
+        mermaid.initialize({theme: '<%= mermaidConfig.theme || "forest" %>'});
+    };
+    const reload = () => {
+        mermaid.init(undefined, ".mermaid");
+    };
+    if (typeof mermaid == 'undefined') {
+        const src = 'https://cdn.jsdelivr.net/npm/mermaid@<%= mermaidConfig.version || "latest" %>/dist/mermaid.min.js';
+        $.getScript(src, init);
+    }
+    // Set PJAX callback function
+    window.addEventListener('pjax:complete', reload);
+>>>>>>> 2143c2b87fc69e61113829da03e865f7bce4c8ff
 </script>

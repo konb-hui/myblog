@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <div id="gitalk-container" class="post-comments lazy-load"></div>
 <script>
@@ -19,4 +20,27 @@
         }
     };
 </script>
+=======
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<div id="gitalk-container" class="post-comments lazy-load"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            console.log('Gitalk loading...');
+            const gitalk = new Gitalk(Object.assign({
+                id: '<%- url_for(page.path) %>',
+                path: '<%- url_for(page.path) %>'
+            }, JSON.parse('<%- JSON.stringify(theme.gitalk) %>')));
+
+            gitalk.render('gitalk-container');
+        }
+        if (typeof Gitalk === 'undefined') {
+            const src = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+>>>>>>> 2143c2b87fc69e61113829da03e865f7bce4c8ff
 <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by Gitalk.</a></noscript>

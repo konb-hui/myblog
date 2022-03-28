@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="post-comments lazy-load">
     <div id="tcomment"></div>
 </div>
@@ -14,4 +15,22 @@
         }
     };
 </script>
+=======
+<div class="post-comments lazy-load">
+    <div id="tcomment"></div>
+</div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            twikoo.init({ envId: '<%- theme.twikoo.env_id %>', el: '#tcomment' });
+        }
+        if (typeof twikoo == 'undefined') {
+            const src = 'https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+>>>>>>> 2143c2b87fc69e61113829da03e865f7bce4c8ff
 <noscript>Please enable JavaScript to view the <a href="https://twikoo.js.org/">comments powered by Twikoo.</a></noscript>
