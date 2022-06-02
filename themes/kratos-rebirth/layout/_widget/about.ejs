@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <aside id="krw-about" class="widget widget-kratos-about clearfix">
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
@@ -9,16 +8,30 @@
     <div class="textwidget">
         <p class="text-center"><%- config.description %></p>
     </div>
-=======
-<aside id="krw-about" class="widget widget-kratos-about clearfix">
-    <div class="photo-background"></div>
-    <div class="photo-wrapper clearfix">
-        <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="<%= theme.avatarUri %>" />
-        </div>
+    <div class="site-meta">
+        <a class="meta-item" href="<%- url_for('/archives/') %>">
+            <span class="title">
+                <%- __('post') %>
+            </span>
+            <span class="count">
+                <%- site.posts.length %>
+            </span>
+        </a>
+        <a class="meta-item" href="<%- url_for('/categories/') %>">
+            <span class="title">
+                <%- __('category') %>
+            </span>
+            <span class="count">
+                <%- site.categories.length %>
+            </span>
+        </a>
+        <a class="meta-item" href="<%- url_for('/tags/') %>">
+            <span class="title">
+                <%- __('tag') %>
+            </span>
+            <span class="count">
+                <%- site.tags.length %>
+            </span>
+        </a>
     </div>
-    <div class="textwidget">
-        <p class="text-center"><%- config.description %></p>
-    </div>
->>>>>>> 2143c2b87fc69e61113829da03e865f7bce4c8ff
 </aside>

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<div id="disqus_thread" class="post-comments lazy-load"></div>
+<div id="disqus_thread" class="post-comments lazy-load<% if (theme.posts.comments?.enableBGImage) { %> bg-image<% } %>"></div>
 
 <script>
     var disqus_config = function () {
@@ -7,7 +6,7 @@
         this.page.identifier = '<%- page.path %>'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     var load_comm = () => {
-        if (typeof DISQUS == 'undefined') {
+        if (typeof DISQUS === 'undefined') {
             var d = document, s = d.createElement('script');
             s.src = 'https://<%- theme.disqus.shortname %>.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
@@ -26,33 +25,4 @@
 </script>
 <script async id="dsq-count-scr" src="//<%- theme.disqus.shortname %>.disqus.com/count.js"></script>
 
-=======
-<div id="disqus_thread" class="post-comments lazy-load"></div>
-
-<script>
-    var disqus_config = function () {
-        this.page.url = '<%- page.permalink %>';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = '<%- page.path %>'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    var load_comm = () => {
-        if (typeof DISQUS == 'undefined') {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://<%- theme.disqus.shortname %>.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        } else {
-            DISQUS.reset({
-                reload: true,
-                config: function () {  
-                    this.page.url = '<%- page.permalink %>';  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = '<%- page.path %>'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                }
-            });
-        }
-    };
-    
-</script>
-<script async id="dsq-count-scr" src="//<%- theme.disqus.shortname %>.disqus.com/count.js"></script>
-
->>>>>>> 2143c2b87fc69e61113829da03e865f7bce4c8ff
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

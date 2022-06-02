@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 {
-  "name": "@candinya/kratos-rebirth",
-  "version": "1.6.7",
+  "name": "kratos-rebirth",
+  "version": "1.8.1",
   "description": "A transplanted theme for Hexo, with many new features built with love.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,9 +19,6 @@
   ],
   "author": "Candinya",
   "license": "GPL-3.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "bugs": {
     "url": "https://github.com/Candinya/Kratos-Rebirth/issues"
   },
@@ -40,46 +36,3 @@
     "sass": "^1.35.1"
   }
 }
-=======
-{
-  "name": "@candinya/kratos-rebirth",
-  "version": "1.6.7",
-  "description": "A transplanted theme for Hexo, with many new features built with love.",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build",
-    "dev": "gulp watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Candinya/Kratos-Rebirth.git"
-  },
-  "keywords": [
-    "hexo",
-    "theme",
-    "kratos",
-    "candinya"
-  ],
-  "author": "Candinya",
-  "license": "GPL-3.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "bugs": {
-    "url": "https://github.com/Candinya/Kratos-Rebirth/issues"
-  },
-  "homepage": "https://github.com/Candinya/Kratos-Rebirth#readme",
-  "devDependencies": {
-    "browser-sync": "^2.27.4",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-cli": "^2.3.0",
-    "gulp-dart-sass": "^1.0.2",
-    "gulp-rename": "^2.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-terser": "^2.0.1",
-    "sass": "^1.35.1"
-  }
-}
->>>>>>> 2143c2b87fc69e61113829da03e865f7bce4c8ff

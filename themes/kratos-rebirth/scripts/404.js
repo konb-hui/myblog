@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // 生成404页面
 hexo.extend.generator.register('notfoundPage', function(locals){
     return {
@@ -9,7 +8,7 @@ hexo.extend.generator.register('notfoundPage', function(locals){
         },
         layout: '_pages/404'
     };
-=======
+});
 // 生成404页面
 hexo.extend.generator.register('notfoundPage', function(locals){
     return {
@@ -20,5 +19,4 @@ hexo.extend.generator.register('notfoundPage', function(locals){
         },
         layout: '_pages/404'
     };
->>>>>>> 2143c2b87fc69e61113829da03e865f7bce4c8ff
 });
