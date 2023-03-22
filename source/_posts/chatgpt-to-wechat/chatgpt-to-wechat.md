@@ -3,7 +3,7 @@ title: 如何创建一个chatGPT的微信机器人
 date: 2023-03-22 19:39:41
 tags:
 - chatGPT
-- categories: 
+categories: 
 - 成神之路
 ---
 最近chatGPT还是比较火，也因为也比较感兴趣且刚好在github上看到一个把chatGPT做出微信机器人的项目，然后就去了解了下怎么弄，然后就出了这个教程把整个过程总结一下。

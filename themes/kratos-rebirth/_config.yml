@@ -93,7 +93,7 @@ twikoo:
 ## 不仅限于以下内容，您可以参照 Waline的 [前端配置文档](https://waline.js.org/reference/client.html) 设置您需要的配置项
 ## el 和 path 会在页面自动生成，不必加入
 waline:
-  serverURL: https://waline-konb-l9gc4tkyy-konb-hui.vercel.app/
+  serverURL: https://waline-konb-dysy1u8kh-konb-hui.vercel.app/
   visitor: true
 
 # Gitalk [Gitalk](https://gitalk.github.io/) 评论相关
